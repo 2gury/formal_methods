@@ -160,7 +160,7 @@ init {
 
 // Safety
 // 1x -- EW(2) x NS(3)
-// spin -search -a -bfs  -ltl p1 light.pml
+// spin -search -bfs  -ltl p1 light.pml
 ltl p1 { [](!(isLightGreen[1] && isLightGreen[2])) }
 
 // 2x -- EW(2) x NE(4) 
