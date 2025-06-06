@@ -164,84 +164,84 @@ init {
 ltl p1 { [](!(isLightGreen[1] && isLightGreen[2])) }
 
 // 2x -- EW(2) x NE(4) 
-// spin -search -a -bfs  -ltl p2 light.pml
+// spin -search -bfs  -ltl p2 light.pml
 ltl p2 { [](!(isLightGreen[1] && isLightGreen[3])) }
 
 // 3x -- EW(2) x WN(1)
-// spin -search -a -bfs  -ltl p3 light.pml
+// spin -search -bfs  -ltl p3 light.pml
 ltl p3 { [](!(isLightGreen[1] && isLightGreen[0])) }
 
 // 4x -- WN(1) x NS(3)
-// spin -search -a -bfs  -ltl p4 light.pml
+// spin -search -bfs  -ltl p4 light.pml
 ltl p4 { [](!(isLightGreen[0] && isLightGreen[2])) }
 
 // 5x -- WN(1) x NE(4)
-// spin -search -a -bfs  -ltl p5 light.pml
+// spin -search -bfs  -ltl p5 light.pml
 ltl p5 { [](!(isLightGreen[0] && isLightGreen[3])) }
 
 // 6x -- NE(4) x ES(5)
-// spin -search -a -bfs  -ltl p6 light.pml
+// spin -search -bfs  -ltl p6 light.pml
 ltl p6 { [](!(isLightGreen[3] && isLightGreen[4])) }
 
 // 7x -- EW(2) x PD(6)
-// spin -search -a -bfs  -ltl p7 light.pml
+// spin -search -bfs  -ltl p7 light.pml
 ltl p7 { [](!(isLightGreen[1] && isLightGreen[5])) }
 
 // 8x -- ES(5) x PD(6)
-// spin -search -a -bfs  -ltl p8 light.pml
+// spin -search -bfs  -ltl p8 light.pml
 ltl p8 { [](!(isLightGreen[4] && isLightGreen[5])) }
 
 // 9x -- NE(4) x PD(6) 
-// spin -search -a -bfs  -ltl p9 light.pml
+// spin -search -bfs  -ltl p9 light.pml
 ltl p9 { [](!(isLightGreen[3] && isLightGreen[5])) }
 
 
 // Liveness 
 // WN(1)
-// spin -search -a -bfs  -ltl p10 light.pml
+// spin -search -bfs  -ltl p10 light.pml
 ltl p10 { []( (isLightRequested[0] && !isLightGreen[0]) -> (<>(isLightGreen[0])) ) }
 
 // EW(2)
-// spin -search -a -bfs  -ltl p11 light.pml
+// spin -search -bfs  -ltl p11 light.pml
 ltl p11 { []( (isLightRequested[1] && !isLightGreen[1]) -> (<>isLightGreen[1]) ) }
 
 // NS(3)
-// spin -search -a -bfs  -ltl p12 light.pml
+// spin -search -bfs  -ltl p12 light.pml
 ltl p12 { []( (isLightRequested[2] && !isLightGreen[2]) -> (<>isLightGreen[2]) ) }
 
 // NE(4)
-// spin -search -a -bfs  -ltl p13 light.pml
+// spin -search -bfs  -ltl p13 light.pml
 ltl p13 { []( (isLightRequested[3] && !isLightGreen[3]) -> (<>isLightGreen[3]) ) }
 
 // ES(5)
-// spin -search -a -bfs  -ltl p14 light.pml
+// spin -search -bfs  -ltl p14 light.pml
 ltl p14 { []( (isLightRequested[4] && !isLightGreen[4]) -> (<>isLightGreen[4]) ) }
 
 // PD(6)
-// spin -search -a -bfs  -ltl p15 light.pml
+// spin -search -bfs  -ltl p15 light.pml
 ltl p15 { []( (isLightRequested[5] && !isLightGreen[5]) -> (<>isLightGreen[5]) ) }
 
 // Fairness
 // WN(1)
-// spin -search -a -bfs  -ltl p16 light.pml
+// spin -search -bfs  -ltl p16 light.pml
 ltl p16 { [](<>(!isLightGreen[0])) }
 
 // EW(2)
-// spin -search -a -bfs  -ltl p17 light.pml
+// spin -search -bfs  -ltl p17 light.pml
 ltl p17 { [](<>(!isLightGreen[1])) }
 
 // NS(3)
-// spin -search -a -bfs  -ltl p18 light.pml
+// spin -search -bfs  -ltl p18 light.pml
 ltl p18 { [](<>(!isLightGreen[2])) }
 
 // NE(4)
-// spin -search -a -bfs  -ltl p19 light.pml
+// spin -search -bfs  -ltl p19 light.pml
 ltl p19 { [](<>(!isLightGreen[3])) }
 
 // ES(5)
-// spin -search -a -bfs  -ltl p20 light.pml
+// spin -search -bfs  -ltl p20 light.pml
 ltl p20 { [](<>(!isLightGreen[4])) }
 
 // PD(6)
-// spin -search -a -bfs  -ltl p21 light.pml
+// spin -search -bfs  -ltl p21 light.pml
 ltl p21 { [](<>(!isLightGreen[5])) }
