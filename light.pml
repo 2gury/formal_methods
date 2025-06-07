@@ -221,6 +221,7 @@ ltl p14 { []( (isLightRequested[4] && !isLightGreen[4]) -> (<>isLightGreen[4]) )
 // spin -search -bfs  -ltl p15 light.pml
 ltl p15 { []( (isLightRequested[5] && !isLightGreen[5]) -> (<>isLightGreen[5]) ) }
 
+
 // Fairness
 // WN(1)
 // spin -search -bfs  -ltl p16 light.pml
